@@ -1,0 +1,6 @@
+<.form for={@form} phx-submit="create" phx-change="validate">
+  <.input field={@form[:name]} placeholder="4 oranges" autocomplete="off" phx-debounce="blur" />
+  <.input field={@form[:identifier]} placeholder="ABC" autocomplete="off" phx-debounce="blur" />
+  <.input field={@form[:emergency_email]} placeholder="wololo@revelio.sh" phx-debounce="blur" />
+  <.button class="bg-reRed re_button" phx-disable-with="Creating...">create project</.button>
+</.form>
