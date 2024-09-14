@@ -5,10 +5,10 @@ Starting with Algorand
 
 ## How we want to solve it
 Flow:
-1- Developer uploads arc32 / arc56
-2- Revelio verifies truthfulness of the upload (manual verification atm, come say hi!)
-3- Integrators (explorers, wallets) consume Revelio's API and serve users clear text instead of hashes
-4- Happiness!
+- Developer uploads arc32 / arc56
+- Revelio verifies truthfulness of the upload (manual verification atm, come say hi!)
+- Integrators (explorers, wallets) consume Revelio's API and serve users clear text instead of hashes
+- Happiness!
 
 ## Contributing
 Contributions are not only welcome, but encouraged!
