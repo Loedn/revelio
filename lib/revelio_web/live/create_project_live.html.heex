@@ -1,6 +1,30 @@
-<.form for={@form} phx-submit="create" phx-change="validate">
-  <.input field={@form[:name]} placeholder="4 oranges" autocomplete="off" phx-debounce="blur" />
-  <.input field={@form[:identifier]} placeholder="ABC" autocomplete="off" phx-debounce="blur" />
-  <.input field={@form[:emergency_email]} placeholder="wololo@revelio.sh" phx-debounce="blur" />
+<.form for={@form} phx-submit="create" phx-change="validate" class="hello">
+  <div class="space-y-12">
+    <div class="border-b border-gray-900/10 pb-12">
+      <h2 class="text-base font-semibold leading-7 text-gray-900">New Project</h2>
+      <p class="mt-1 text-sm leading-6 text-gray-600">This information will be displayed publicly so be careful what you share.</p>
+
+      <div class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
+        <div class="sm:col-span-4">
+          <label for="username" class="block text-sm font-medium leading-6 text-gray-900">Name</label>
+          <div class="mt-2">
+              <.input field={@form[:name]} placeholder="4 oranges" autocomplete="off" phx-debounce="blur" class="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 sm:max-w-md"/>
+          </div>
+        </div>
+        <div class="sm:col-span-4">
+          <label for="username" class="block text-sm font-medium leading-6 text-gray-900">Identifier</label>
+          <div class="mt-2">
+              <.input field={@form[:identifier]} placeholder="ABC" autocomplete="off" phx-debounce="blur" class="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 sm:max-w-md"/>
+          </div>
+        </div>
+        <div class="sm:col-span-4">
+          <label for="username" class="block text-sm font-medium leading-6 text-gray-900">Emergency Contact Email</label>
+          <div class="mt-2">
+              <.input field={@form[:emergency_email]} placeholder="wololo@revelio.sh" phx-debounce="blur" class="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 sm:max-w-md"/>
+          </div>
+        </div>
+      </div>
+    </div>
   <.button class="bg-reRed re_button" phx-disable-with="Creating...">create project</.button>
+  </div>
 </.form>

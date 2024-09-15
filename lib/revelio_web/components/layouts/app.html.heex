@@ -121,11 +121,21 @@
     </div>
   </div>
 </div>
+<div class="py-10">
+    <header>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <h1 class="text-3xl font-bold leading-tight tracking-tight text-gray-900">Dashboard</h1>
+      </div>
+    </header>
+    <main>
+      <div class="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
+        <.flash_group flash={@flash} />
+        <%= @inner_content %>
+        <!-- Your content -->
+      </div>
+    </main>
+  </div>
 
-<main class="px-4 py-20 sm:px-6 lg:px-8">
-  <.flash_group flash={@flash} />
-  <%= @inner_content %>
-</main>
 <footer class="mx-auto w-full px-6 py-12 md:flex md:items-center md:justify-between lg:px-8 relative bottom-0 z-50">
   <div class="flex justify-center space-x-6 md:order-2">
     <a href="#" class="text-gray-400 hover:text-gray-500">
